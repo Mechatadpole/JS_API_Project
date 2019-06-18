@@ -21,8 +21,8 @@ P.getPokemonByName("butterfree")
 
 
 function preload() {
-  playerImage = loadImage("https://i.imgur.com/N5uCbDu.png");
-  enemyImage = loadImage("https://i.imgur.com/OdL0XPt.png");
+  playerImage = loadImage("gliscor.png");
+  enemyImage = loadImage("blackferaligatr.png");
   backgroundImage = loadImage("https://images.unsplash.com/photo-1526392587392-d1627b6c134a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
 }
 
