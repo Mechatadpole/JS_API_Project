@@ -6,18 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokemon Dodger</title>
-
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./p5/addons/p5.dom.js"></script>
+    <script src="./p5/addons/p5.sound.js"></script>
+    <script src="./p5/addons/p5.dom.min.js"></script>
+    <script src="./p5/addons/p5.sound.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body>
 
 
 
+    <!-- app search page-->
+    <div data-role="page" id="pokeSearch-page">
+        <div data-role="main" class="ui-content">
+            <form id="pokeForm" method="post">
+                <div>
+                    <label for="pokeInput">Pokemon name or number:</label>
+                    <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadown-inset">
+                        <input type="text" name="pokeInput" id="pokeInput" placeholder="Name/Number" value="" required
+                            pattern=".*\S+.*">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <button id="submitButton" OnClientClick="return false;" class="ui-btn">Search</button>
+                </div>
+            </form>
+            <div id="myPokemon"></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
-    <script src="https://cdn.rawgit.com/molleindustria/p5.play/42cd19c3/lib/p5.play.js"></script>
+        </div>
+    </div>
 
     <script src="index.js"></script>
+
+
+
+
 
 </body>
 
